@@ -4,6 +4,9 @@
 	--simpletip-offset: 10px;
 	--simpletip-transition: opacity 200ms ease-in-out;
 	--simpletip-font: 500 14px "Inter", sans-serif;
+	--simpletip-radius: 4px;
+	--simpletip-padding: 8px;
+	--simpletip-width: max-content;
 }
 
 .simpletip-right,
@@ -17,78 +20,86 @@
 .simpletip-left:hover::before,
 .simpletip-top:hover::before,
 .simpletip-bottom:hover::before {
-	opacity: 1;
 	z-index: 1;
+	opacity: 1;
 }
 
 .simpletip-right::before {
-	content: attr(data-simpletip);
-	font: var(--simpletip-font);
+	z-index: -1;
 	position: absolute;
 	top: 50%;
 	left: 100%;
-	transform: translateY(-50%);
+	width: var(--simpletip-width);
 	margin-left: var(--simpletip-offset);
+	padding: var(--simpletip-padding);
+	transform: translateY(-50%);
+	border-radius: var(--simpletip-radius);
 	background-color: var(--simpletip-bg);
+	content: attr(data-simpletip);
 	color: var(--simpletip-text);
-	width: max-content;
-	padding: 8px;
-	border-radius: 4px;
+	font: var(--simpletip-font);
+	cursor: default;
 	opacity: 0;
-	z-index: -1;
+	pointer-events: none;
 	transition: var(--simpletip-transition);
 }
 
 .simpletip-left::before {
-	content: attr(data-simpletip);
-	font: var(--simpletip-font);
+	z-index: -1;
 	position: absolute;
 	top: 50%;
 	right: 100%;
-	transform: translateY(-50%);
+	width: var(--simpletip-width);
 	margin-right: var(--simpletip-offset);
+	padding: var(--simpletip-padding);
+	transform: translateY(-50%);
+	border-radius: var(--simpletip-radius);
 	background-color: var(--simpletip-bg);
+	content: attr(data-simpletip);
 	color: var(--simpletip-text);
-	width: max-content;
-	padding: 8px;
-	border-radius: 4px;
+	font: var(--simpletip-font);
+	cursor: default;
 	opacity: 0;
-	z-index: -1;
+	pointer-events: none;
 	transition: var(--simpletip-transition);
 } 
 
 .simpletip-top::before {
-	content: attr(data-simpletip);
-	font: var(--simpletip-font);
-	position: absolute;
-	left: 50%;
-	bottom: 100%;
-	transform: translateX(-50%);
-	margin-bottom: var(--simpletip-offset);
-	background-color: var(--simpletip-bg);
-	color: var(--simpletip-text);
-	width: max-content;
-	padding: 8px;
-	border-radius: 4px;
-	opacity: 0;
 	z-index: -1;
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	width: var(--simpletip-width);
+	margin-bottom: var(--simpletip-offset);
+	padding: var(--simpletip-padding);
+	transform: translateX(-50%);
+	border-radius: var(--simpletip-radius);
+	background-color: var(--simpletip-bg);
+	content: attr(data-simpletip);
+	color: var(--simpletip-text);
+	font: var(--simpletip-font);
+	cursor: default;
+	opacity: 0;
+	pointer-events: none;
 	transition: var(--simpletip-transition);
 }
 
 .simpletip-bottom::before {
-	content: attr(data-simpletip);
-	font: var(--simpletip-font);
-	position: absolute;
-	left: 50%;
-	top: 100%;
-	transform: translateX(-50%);
-	margin-top: var(--simpletip-offset);
-	background-color: var(--simpletip-bg);
-	color: var(--simpletip-text);
-	width: max-content;
-	padding: 8px;
-	border-radius: 4px;
-	opacity: 0;
 	z-index: -1;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	width: var(--simpletip-width);
+	margin-top: var(--simpletip-offset);
+	padding: var(--simpletip-padding);
+	transform: translateX(-50%);
+	border-radius: var(--simpletip-radius);
+	background-color: var(--simpletip-bg);
+	content: attr(data-simpletip);
+	color: var(--simpletip-text);
+	font: var(--simpletip-font);
+	cursor: default;
+	opacity: 0;
+	pointer-events: none;
 	transition: var(--simpletip-transition);
 }
