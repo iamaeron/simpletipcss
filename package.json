@@ -1,7 +1,7 @@
 {
   "name": "simpletipcss",
   "version": "0.0.4",
-  "description": "A lightweight, easy-to-use, and no-JS tooltip.",
+  "description": "A no-JS, lightweight, customizable, and easy-to-use tooltip.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
