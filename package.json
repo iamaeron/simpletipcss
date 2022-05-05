@@ -1,0 +1,24 @@
+{
+  "name": "simpletipcss",
+  "version": "0.0.2",
+  "description": "A lightweight, easy-to-use, and no-JS tooltip.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamaeron/simpletipcss.git"
+  },
+  "keywords": [
+    "tooltip",
+    "simpletooltip",
+    "simpletip"
+  ],
+  "author": "John Aeron Sencil <johnaeron.dev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamaeron/simpletipcss/issues"
+  },
+  "homepage": "https://github.com/iamaeron/simpletipcss#readme"
+}

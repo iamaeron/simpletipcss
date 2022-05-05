@@ -1,0 +1,94 @@
+:root {
+	--simpletip-bg: #5D5D77;
+	--simpletip-text: #fff;
+	--simpletip-offset: 10px;
+	--simpletip-transition: opacity 200ms ease-in-out;
+	--simpletip-font: 500 14px "Inter", sans-serif;
+}
+
+.simpletip-right,
+.simpletip-left,
+.simpletip-top,
+.simpletip-bottom {
+	position: relative;
+}
+
+.simpletip-right:hover::before,
+.simpletip-left:hover::before,
+.simpletip-top:hover::before,
+.simpletip-bottom:hover::before {
+	opacity: 1;
+	z-index: 1;
+}
+
+.simpletip-right::before {
+	content: attr(data-simpletip);
+	font: var(--simpletip-font);
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	transform: translateY(-50%);
+	margin-left: var(--simpletip-offset);
+	background-color: var(--simpletip-bg);
+	color: var(--simpletip-text);
+	width: max-content;
+	padding: 8px;
+	border-radius: 4px;
+	opacity: 0;
+	z-index: -1;
+	transition: var(--simpletip-transition);
+}
+
+.simpletip-left::before {
+	content: attr(data-simpletip);
+	font: var(--simpletip-font);
+	position: absolute;
+	top: 50%;
+	right: 100%;
+	transform: translateY(-50%);
+	margin-right: var(--simpletip-offset);
+	background-color: var(--simpletip-bg);
+	color: var(--simpletip-text);
+	width: max-content;
+	padding: 8px;
+	border-radius: 4px;
+	opacity: 0;
+	z-index: -1;
+	transition: var(--simpletip-transition);
+} 
+
+.simpletip-top::before {
+	content: attr(data-simpletip);
+	font: var(--simpletip-font);
+	position: absolute;
+	left: 50%;
+	bottom: 100%;
+	transform: translateX(-50%);
+	margin-bottom: var(--simpletip-offset);
+	background-color: var(--simpletip-bg);
+	color: var(--simpletip-text);
+	width: max-content;
+	padding: 8px;
+	border-radius: 4px;
+	opacity: 0;
+	z-index: -1;
+	transition: var(--simpletip-transition);
+}
+
+.simpletip-bottom::before {
+	content: attr(data-simpletip);
+	font: var(--simpletip-font);
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	transform: translateX(-50%);
+	margin-top: var(--simpletip-offset);
+	background-color: var(--simpletip-bg);
+	color: var(--simpletip-text);
+	width: max-content;
+	padding: 8px;
+	border-radius: 4px;
+	opacity: 0;
+	z-index: -1;
+	transition: var(--simpletip-transition);
+}
