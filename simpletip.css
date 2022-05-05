@@ -6,7 +6,8 @@
 	--simpletip-font: 500 14px "Inter", sans-serif;
 	--simpletip-radius: 4px;
 	--simpletip-padding: 8px;
-	--simpletip-width: max-content;
+	--simpletip-width: max-content;	
+	--simpletip-border: 1px solid transparent;
 }
 
 .simpletip-right,
@@ -42,6 +43,7 @@
 	opacity: 0;
 	pointer-events: none;
 	transition: var(--simpletip-transition);
+	border: var(--simpletip-border);
 }
 
 .simpletip-left::before {
@@ -62,6 +64,7 @@
 	opacity: 0;
 	pointer-events: none;
 	transition: var(--simpletip-transition);
+	border: var(--simpletip-border);
 } 
 
 .simpletip-top::before {
@@ -82,6 +85,7 @@
 	opacity: 0;
 	pointer-events: none;
 	transition: var(--simpletip-transition);
+	border: var(--simpletip-border);
 }
 
 .simpletip-bottom::before {
@@ -102,4 +106,5 @@
 	opacity: 0;
 	pointer-events: none;
 	transition: var(--simpletip-transition);
+	border: var(--simpletip-border);
 }
