@@ -56,7 +56,7 @@ SimpleTip is very easy to use:
 You can customize SimpleTip by creating a new CSS file and overriding the variables.
 
 ```css
-/* newcss.css */
+/* override.css */
 :root {
   /* Changing background color  */
   --simpletip-bg: #5D5D77;
@@ -69,7 +69,27 @@ You can customize SimpleTip by creating a new CSS file and overriding the variab
 }
 ```
 
-### Default Variables
+and then import that file after the `simpletip.css`:
+
+### JS
+```js
+import 'simpletipcss/simpletip.css'
+import './css/override.css'
+````
+
+### HTML
+```html
+<link 
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/simpletipcss@0.0.4/simpletip.css"
+/>
+<link
+  rel="stylesheet"
+  href="./css/override.css"
+/>
+```
+
+## Default Variables
 
 ```css
 :root {
