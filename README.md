@@ -30,7 +30,7 @@ with unpkg:
 ```html
 <link
   rel="stylesheet"
-  href="https://unpkg.com/simpletipcss@0.0.4/simpletip.css"
+  href="https://unpkg.com/simpletipcss@0.0.5/simpletip.css"
 />
 ```
 
@@ -38,7 +38,7 @@ with jsDelivr:
 ```html
 <link 
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/simpletipcss@0.0.4/simpletip.css"
+  href="https://cdn.jsdelivr.net/npm/simpletipcss@0.0.5/simpletip.css"
 />
 ```
 

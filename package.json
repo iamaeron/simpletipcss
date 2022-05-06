@@ -1,6 +1,6 @@
 {
   "name": "simpletipcss",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A no-JS, lightweight, customizable, and easy-to-use tooltip.",
   "main": "index.js",
   "scripts": {
