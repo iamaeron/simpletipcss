@@ -122,6 +122,10 @@ import './css/override.css'
 }
 ```
 
+### Issues
+
+It has some issues in items that has z-index value.
+
 ### Support
 
 Leaving this project's repository a star will be much appreciated! <3
