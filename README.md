@@ -46,8 +46,11 @@ with jsDelivr:
 
 SimpleTip is very easy to use:
 
+`simpletip` - main style
+`st-{ r, l, t, b }` -  simpletip's direction 
+
 ```html
-<div data-simpletip="This is the tooltip content" class="simpletip-right">
+<div data-simpletip="This is the tooltip content" class="simpletip st-r">
   You should see a tooltip in the right when you hover here.
 </div>
 ```

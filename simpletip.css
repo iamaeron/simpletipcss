@@ -1,5 +1,5 @@
 :root {
-	--simpletip-bg: #5D5D77;
+	--simpletip-bg: #242529;
 	--simpletip-text: #fff;
 	--simpletip-offset: 10px;
 	--simpletip-transition: opacity 200ms ease-in-out;
@@ -10,39 +10,16 @@
 	--simpletip-border: 1px solid transparent;
 }
 
-.simpletip-right,
-.simpletip-left,
-.simpletip-top,
-.simpletip-bottom {
+.simpletip {
 	position: relative;
 }
 
-.simpletip-right:hover::before,
-.simpletip-left:hover::before,
-.simpletip-top:hover::before,
-.simpletip-bottom:hover::before {
-	z-index: 1;
+.simpletip:hover::before{
 	opacity: 1;
 }
 
-.simpletip-right:focus::before,
-.simpletip-left:focus::before,
-.simpletip-top:focus::before,
-.simpletip-bottom:focus::before, 
-.simpletip-right:focus-within::before,
-.simpletip-left:focus-within::before,
-.simpletip-top:focus-within::before,
-.simpletip-bottom:focus-within::before {
-	opacity: 0;
-	z-index: -1;
-}
-
-.simpletip-right::before,
-.simpletip-left::before,
-.simpletip-top::before,
-.simpletip-bottom::before {
+.simpletip::before {
 	width: var(--simpletip-width);
-	z-index: -1;
 	position: absolute;
 	border-radius: var(--simpletip-radius);
 	background-color: var(--simpletip-bg);
@@ -55,30 +32,31 @@
 	transition: var(--simpletip-transition);
 	border: var(--simpletip-border);
 	padding: var(--simpletip-padding);
+	pointer-events: none;
 }
 
-.simpletip-right::before {
+.st-r::before {
 	top: 50%;
 	left: 100%;
 	margin-left: var(--simpletip-offset);
 	transform: translateY(-50%);
 }
 
-.simpletip-left::before {
+.st-l::before {
 	top: 50%;
 	right: 100%;
 	margin-right: var(--simpletip-offset);
 	transform: translateY(-50%);
 } 
 
-.simpletip-top::before {
+.st-t::before {
 	bottom: 100%;
 	left: 50%;
 	margin-bottom: var(--simpletip-offset);
 	transform: translateX(-50%);
 }
 
-.simpletip-bottom::before {
+.st-b::before {
 	top: 100%;
 	left: 50%;
 	margin-top: var(--simpletip-offset);
